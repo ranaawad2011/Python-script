@@ -1,0 +1,26 @@
+the same task using user input instead of fixed values:
+
+
+# Get item prices from the user
+item1 = float(input("Enter price of item 1: "))
+item2 = float(input("Enter price of item 2: "))
+item3 = float(input("Enter price of item 3: "))
+
+# Get budget from the user
+budget = float(input("Enter your budget: "))
+
+# Calculate total cost
+total_cost = item1 + item2 + item3
+
+# Show results
+print("\nTotal cost of items:", total_cost)
+print("Budget:", budget)
+
+# Compare with budget
+if total_cost <= budget:
+    print("You are within the budget.")
+    print("Money left:", budget - total_cost)
+else:
+    print("You are over the budget.")
+    print("Extra money needed:", total_cost - budget)
+
